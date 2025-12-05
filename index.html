@@ -19,6 +19,8 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
+        html { scroll-behavior: smooth; }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
@@ -153,6 +155,8 @@
             padding: 25px;
             border-radius: 8px;
             transition: transform 0.3s, border-color 0.3s;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -175,7 +179,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-top: 20px;
+            margin-top: auto;
+            padding-top: 20px;
         }
 
         .tech-tag {
@@ -355,18 +360,33 @@
         </section>
 
         <section id="publications">
-            <h2 class="section-title"><span>04.</span> Publications & Projects</h2>
-            <div class="card">
-                <h3>Reviving Indigenous Script: OCR for Prachalit Newa</h3>
-                <p style="color: var(--text-muted); margin-top: 10px;">
-                    Research focused on preserving ancient scripts through modern AI. This work involved creating the first-ever 
-                    <strong>Prachalit Newa Lipi Character Dataset</strong> and implementing Optical Character Recognition (OCR) techniques.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">OCR</span>
-                    <span class="tech-tag">Dataset Creation</span>
-                    <span class="tech-tag">Cultural Heritage</span>
+            <h2 class="section-title"><span>04.</span> Publications</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>Reviving Indegeneous Script: OCR for Prachalit Newa Script</h3>
+                    <p style="color: var(--text-muted); margin-top: 10px; font-size: 0.9rem;">
+                        Research focused on Optical Character Recognition (OCR) methodologies specifically tailored for the indigenous Prachalit Newa script.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Heritage Preservation</span>
+                    </div>
                 </div>
+
+                <div class="card">
+                    <h3>Reviving Ancient Scripts: Introducing the First-Ever Prachalit Newa Lipi Dataset</h3>
+                    <p style="color: var(--text-muted); margin-top: 10px; font-size: 0.9rem;">
+                        Contribution to the AI community by creating and releasing the first-ever character dataset for Prachalit Newa Lipi to enable future research.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Dataset Creation</span>
+                        <span class="tech-tag">Data Science</span>
+                        <span class="tech-tag">Open Source</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
